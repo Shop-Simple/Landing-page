@@ -17,7 +17,14 @@ const Signup = () => {
         console.log('Email:', email);
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleSubmit(e);
+        }
+    };
+
     const handleSubmit = (e) => {
+        console.log('Form submitted');
         e.preventDefault();
         if (!isValidEmail) return;
 
@@ -43,18 +50,19 @@ const Signup = () => {
             <img src="/ShopSimpleLogo.svg" alt="Logo" />
             <h2 className="text-2xl m-5">Sign up to get early access + update </h2>
             
-            
             <div className='Searchcontainer'>
                 <input 
                 type="text" 
                 value ={email}
                 onChange={handleInputChange}
+                onKeyDown={handleKeyDown}
                 placeholder="Enter your email"
                 className="input" />
                  <button
                     className={`searchButton ${isValidEmail ? 'active' : ''}`}
                     type="submit"
                     disabled={!isValidEmail}
+                    onClick={handleSubmit}
                 >
                     <FontAwesomeIcon icon={faArrowUp} />
                 </button>

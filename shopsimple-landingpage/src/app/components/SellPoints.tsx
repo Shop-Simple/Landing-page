@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
+import '../styles/sellpoints.css';
 
 const SellPoints = () => {
   useEffect(() => {
@@ -25,7 +26,7 @@ const SellPoints = () => {
       <div className="relative point2 opacity-0 translate-x-[-20px] transition-opacity transition-transform duration-500 ease-in-out mt-8">
         <img src="/flower-icon.svg" className="mx-auto" alt="Flower Icon" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-20">
-          <h1 className="text-3xl font-extrabold text-violet-700">Personalized Recommendations</h1>
+          <h1 className="text-3xl font-semibold text-violet-700">Personalized Recommendations</h1>
           <p className='text-xl text-violet-700'>Get tailored product suggestions based on your preferences.</p>
         </div>
       </div>
@@ -33,7 +34,7 @@ const SellPoints = () => {
       <div className="relative point3 opacity-0 translate-x-[-20px] transition-opacity transition-transform duration-500 ease-in-out">
         <img src="/flower2-icon.svg" className="mx-auto" alt="Flower 2 Icon" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-20">
-          <h1 className="text-3xl font-extrabold text-violet-700">Best Price Guarantee</h1>
+          <h1 className="text-3xl font-semibold text-violet-700">Best Price Guarantee</h1>
           <p className='text-xl text-violet-700'>Compare prices from various retailers to secure the best deals.</p>
         </div>
       </div>

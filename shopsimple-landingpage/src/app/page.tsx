@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SellPoints from "./components/SellPoints";
 import Signup from "./components/Signup";
+import lastMessage from "./components/LastMessage";
 
 export default function Home() {
   return (
