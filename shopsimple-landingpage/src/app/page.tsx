@@ -5,13 +5,14 @@ import lastMessage from "./components/LastMessage";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen">
-  
-      <div className ="w-1/2">
-        <SellPoints />
-      </div>
-      <div className ="w-1/2">
-        <Signup />
+    <main className="flex w-full min-h-screen">
+      <div className="md:flex lg:flex w-full">
+        <div className="w-full">
+          <SellPoints />
+        </div>
+        <div className="w-full">
+          <Signup />
+        </div>
       </div>
     </main>
   );
