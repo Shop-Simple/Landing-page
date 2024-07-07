@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4E1FC2;
+  }
+  
+  .relative {
+    position: relative;
+    opacity: 0; /* Initially hide all points */
+    transform: translateX(-20px); /* Slide in effect */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .relative:hover {
+    transform: translateX(-20px) rotate(-5deg);
+  }
+  
+  /* Animation delay for each point */
+  .point1 {
+    animation: fadeIn 0.5s forwards 0.5s;
+  }
+  
+  .point2 {
+    animation: fadeIn 0.5s forwards 1s;
+  }
+  
+  .point3 {
+    animation: fadeIn 0.5s forwards 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
