@@ -94,18 +94,12 @@ const htmlContent = `<!DOCTYPE html>
 <body>
   <div class="container">
     <div class="header">
-      <h1 class="title">Thank You for Joining &nbsp<p class="title specailS">S</p>hop<p class="title specailS">S </p>imple! 🎉🎉</h1>
+      <h1 class="title">Thank You for Joining &nbsp;<p class="title specailS">S</p>hop<p class="title specailS">S </p>imple! 🎉🎉</h1>
     </div>
     <div class="content">
       <p>Hi there,</p>
       <p>Thank you for joining🎉 the waitlist for ShopSimple! We're excited to have you on board.</p>
       <p>Stay tuned for future updates and exclusive offers. We're working hard to bring you the best experience possible.</p>
-      <p>If you have any questions or need assistance, feel free to reach out to us.</p>
-      <a href="YOUR_SUPPORT_URL" class="button">Contact Support</a>
-    </div>
-    <div class="footer">
-      <p>&copy; 2024 ShopSimple. All rights reserved.</p>
-      <p>1234 Market Street, Suite 100, San Francisco, CA 94103</p>
     </div>
   </div>
 </body>
