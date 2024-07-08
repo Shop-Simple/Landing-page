@@ -62,7 +62,8 @@ const htmlContent = `<!DOCTYPE html>
     .title {
       margin: 0;
       color: #333;
-      display:flex;
+      text-decoration: underline 3px;
+      text-decoration-color: #4E1FC2;
     }
     .content {
       text-align: center;
@@ -94,13 +95,17 @@ const htmlContent = `<!DOCTYPE html>
 <body>
   <div class="container">
     <div class="header">
-      <h1 class="title">Thank You for Joining &nbsp;<p class="title specailS">S</p>hop<p class="title specailS">S </p>imple! 🎉🎉</h1>
+      <img src="https://i.ibb.co/qRWszYN/shop-Simple-Logo.png" alt="App Logo">
+      <h1 class="title">Thank You for Joining ShopSimple!</h1>
+
     </div>
     <div class="content">
       <p>Hi there,</p>
       <p>Thank you for joining🎉 the waitlist for ShopSimple! We're excited to have you on board.</p>
       <p>Stay tuned for future updates and exclusive offers. We're working hard to bring you the best experience possible.</p>
+     
     </div>
+    
   </div>
 </body>
 </html>`;
@@ -119,7 +124,7 @@ export async function writetomail(email) {
 
 export async function saveUser(value) {
   const docRef = doc(firestore, "waitlist/" + value);
-  console.log(getDoc(docRef));
+  //   console.log(getDoc(docRef));
   const docSnap = await getDoc(docRef);
   if (!docSnap.exists()) {
     await setDoc(docRef, {
