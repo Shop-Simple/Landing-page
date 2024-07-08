@@ -46,10 +46,12 @@ const Signup = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col w-full items-center justify-center min-h-screen">
       <h1 className="text-4xl text-extrabold m-5">Join us in</h1>
       <img src="/ShopSimpleLogo.svg" alt="Logo" />
-      <h2 className="text-2xl m-5">Sign up to get early access + update </h2>
+      <h2 className="md:text-2xl sm:text-sm m-5">
+        Sign up to get early access + update{" "}
+      </h2>
 
       <div className="Searchcontainer">
         <input

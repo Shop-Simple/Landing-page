@@ -5,12 +5,15 @@ import lastMessage from "./components/LastMessage";
 
 export default function Home() {
   return (
-    <main className="flex w-full min-h-screen">
-      <div className="md:flex lg:flex w-full">
-        <div className="w-full">
-          <SellPoints />
+    <main className="flex w-full max-h-screen">
+      <div className=" lg:flex w-full ">
+        <div className="bg-[#4e1fc2] h-full w-full flex justify-center  items-center">
+          <div className="flex bg-[#4e1fc2] w-full">
+            <img src="/Frame_20.png" width={700} height={700}></img>
+            {/* <SellPoints /> */}
+          </div>
         </div>
-        <div className="w-full">
+        <div className="flex justify-center items-center w-full">
           <Signup />
         </div>
       </div>
