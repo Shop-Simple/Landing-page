@@ -94,7 +94,6 @@ const htmlContent = `<!DOCTYPE html>
 <body>
   <div class="container">
     <div class="header">
-      <img src="YOUR_LOGO_URL" alt="App Logo">
       <h1 class="title">Thank You for Joining &nbsp<p class="title specailS">S</p>hop<p class="title specailS">S </p>imple! 🎉🎉</h1>
     </div>
     <div class="content">
@@ -121,7 +120,7 @@ export async function writetomail(email) {
     },
   };
   const newDoc = await addDoc(mail_ref, docData);
-  console.log("email sent");
+  //   console.log("email sent");
 }
 
 export async function saveUser(value) {

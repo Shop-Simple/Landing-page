@@ -9,34 +9,34 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const email = e.target.value;
     setEmail(email);
     setIsValidEmail(validateEmail(email));
-    console.log("Email:", email);
+    // console.log("Email:", email);
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: any) => {
     if (e.key === "Enter") {
       handleSubmit(e);
     }
   };
 
-  const handleSubmit = (e) => {
-    console.log("Form submitted");
+  const handleSubmit = (e: any) => {
+    // console.log("Form submitted");
     e.preventDefault();
     if (!isValidEmail) return;
 
     //add to db
     saveUser(email);
     // Simulate database entry
-    console.log("Form submitted with email:", email);
+    // console.log("Form submitted with email:", email);
 
     // After successful submission, update the submission status
     setIsSubmitted(true);
   };
 
-  const validateEmail = (email) => {
+  const validateEmail = (email: any) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
   };
