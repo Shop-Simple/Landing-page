@@ -14,6 +14,9 @@ import {
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+console.log(process.env.NEXT_PUBLIC_FIREBASE_api);
+console.log(process.env.FIREBASE_api);
+
 const firebaseConfig = {
   process: process.env.NEXT_PUBLIC_FIREBASE_api,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_authDomain,
